@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+<title>ホームページサンプル株式会社のサイトです</title>
+<meta name="keywords" content="ライフサイクルアセスメント,環境学習,e-learning">
+<meta name="description" content="">
+<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+<!--[if lt IE 9]>
+<script src="js/html5.js"></script>
+<script src="js/css3-mediaqueries.js"></script>
+<![endif]-->
+<script src="js/jquery1.7.2.min.js"></script>
+<script src="js/script.js"></script>
+</head>
+
+<body id="subpage">
+<header id="header">
+	<h1>環境学習支援サイト</h1>
+  <!-- ロゴ -->
+	<div class="logo">
+		<a href="index.html">LCA.e-learning<br /><span>ライフサイクルアセスメント</span></a>
+	</div>
+	<!-- / ロゴ -->
+	<!-- 電話番号+受付時間
+	
+  <div class="info">
+		<p class="tel"><span>電話:</span> 012-3456-7890</p>
+		<p class="open">受付時間: 平日 AM 10:00 〜 PM 5:00</p>
+	</div>
+	/ 電話番号+受付時間 -->
+</header>
+
+<!-- メインナビゲーション -->
+<nav id="mainNav">
+	<div class="inner">
+  	<a class="menu" id="menu"><span>MENU</span></a>
+		<div class="panel">   
+    	<ul>
+    		<li><a href="index.html"><strong>トップページ</strong><span>Top</span></a></li>
+				<li><a href="sdgs.html"><strong>SDGsとは？</strong><span>What's SDGs?</span></a></li>
+				<li><a href="lesson.html"><strong>レッスン一覧</strong><span>Lesson</span></a></li>
+				<li><a href="subpage.html"><strong>小テスト</strong><span>Quiz</span></a></li>
+				<li class="active"><a href="simulation.html"><strong>シミュレーション</strong><span>Simulation</span></a></li>
+				<li class="last"><a href="contact.html"><strong>アンケート/お問い合わせ</strong><span>Questionnaire/Contact</span></a></li>
+			</ul>   
+    </div>
+	</div> 
+</nav>
+<!-- / メインナビゲーション -->
+
+<div id="wrapper">
+  
+  <!-- コンテンツ -->
+	<section id="main">
+  
+  	<!-- メイン画像 -->
+		<div id="mainBanner">
+			<img src="images/mainImg2.jpg" width="680" height="140" alt="">
+    	<div class="slogan">
+				<h2>自然との調和を目指す企業です</h2>
+				<p>ホームページサンプル株式会社では最新技術と自然との調和を目指します。<br>革新的な技術で世の中を動かす企業を目指します。</p>
+			</div>
+		</div>
+		<!-- / メイン画像 -->
+    
+    <section class="content">
+    	<h3 class="heading">シナリオ分析</h3>
+      <article>
+			<img src="images/sample1.jpg" width="210" height="120" alt="" class="alignright border" />
+			<form action="output.php" method="post">
+				<dl>
+				  <dt><機能単位の設定><br>1日どの程度水を飲みますか？</dt>
+					<dd>
+					<input type="text" name="ml" maxlength="4"><label for="ml">[ml]</label><br>
+					</dd>
+				  <br>
+					<dt><飲料水の生産・流通><br>Q1.普段どの方法で水を飲むことが多いですか？</dt>
+					<dd>
+					  <label><input type="radio" name="q10" value="0.000288">水道水</label><br>
+					  <label><input type="radio" name="q10" value="0.261">国産500mlペットボトル</label><br>
+					  <label><input type="radio" name="q10" value="0.484">輸入500mlペットボトル</label><br>
+					  <label><input type="radio" name="q10" value="0.176">国産2000mlペットボトル</label><br>
+					  <label><input type="radio" name="q10" value="0.410">輸入1500mlペットボトル</label><br>
+					</dd>
+				  <br>
+					<dt><水質改善処理><br>(Q1で「水道水」を選択した方へ)<br>Q2.水質を改善するためにしていることはありますか？</dt>
+					<dd>
+					  <label><input type="radio" name="q11" value="0">無処理</label><br>
+					  <label><input type="radio" name="q11" value="0.128">煮沸処理</label><br>
+					  <label><input type="radio" name="q11" value="0.000683">浄水器使用</label><br>
+					  <label><input type="radio" name="q11" value="0.0154">冷水機使用(Q5へ)</label><br>
+					</dd>
+				  <br>
+					<dt><飲料水の販売><br>(Q1で「水道水」以外を選択した方へ)<br>Q3.どのような飲料水を購入しましたか？</dt>
+					  <dd>
+						<label><input type="radio" name="q12" value="0.0435">常温販売</label><br>
+						<label><input type="radio" name="q12" value="0.164">冷蔵販売</label><br>
+						<label><input type="radio" name="q12" value="0.254">自動販売機による販売</label><br>
+					  </dd>
+				  <br>
+					<dt><飲料水の保存><br>Q4.飲料水を冷蔵保存していますか？</dt>
+					  <dd>
+						<label><input type="radio" name="q13" value="0">冷蔵保存しない</label><br>
+						<label><input type="radio" name="q13" value="0.0350">冷蔵保存する</label><br>
+					  </dd>
+			  　　   <dt><飲用容器の使用><br>Q5.どのような容器で水を飲むことが多いですか？</dt>
+					 <dd>
+					   <label><input type="radio" name="q14" value="0.000515">使用しない(Q2で「冷水器使用」を選択した方向け)</label><br>
+					   <label><input type="radio" name="q14" value="4.08">ガラスコップ使用</label><br>
+					   <label><input type="radio" name="q14" value="12.2">水筒使用</label><br>
+					   <label><input type="radio" name="q14" value="0">ペットボトル使用</label><br>
+					  </dd>
+				  　 <dt><ペットボトルの処理><br>Q1.ペットボトルをどのように処理しますか？</dt>
+					<dd>
+					  <label><input type="radio" name="q15" value="0">購入も使用もしていない</label><br>
+					  <label><input type="radio" name="q15" value="1.80">繰り返し使用</label><br>
+					  <label><input type="radio" name="q15" value="a">可燃ごみとして捨てる</label><br>
+					  <label><input type="radio" name="q15" value="b">分別して捨てる</label><br>
+					</dd>
+				</dl>  
+				<br>
+				<input type="submit" value="送信する" />
+				</form>
+
+		</article>
+	</section>
+	</section>
+	<!-- / コンテンツ -->
+
+	<aside id="sidebar">
+       
+		<h3 class="heading">シミュレーション</h3>
+    <article>
+			<ul>
+				<li><a href="subpage.html">シナリオ分析</a></li>
+				<li><a href="subpage.html">分析結果</a></li>
+			</ul>
+    </article>
+    
+	</aside>
+ 
+</div>
+ 
+<!-- フッター -->
+<footer id="footer">
+	<div class="inner">
+  	<!-- 左側 -->
+		<div id="info" class="grid">
+			<!-- ロゴ -->
+			<div class="logo">
+				<a href="index.html">LCA.e-learning<br /><span>ライフサイクルアセスメント</span></a>
+			</div>
+			<!-- / ロゴ -->
+			<!-- 電話番号+受付時間
+			<div class="info">
+				<p class="tel"><span>電話:</span> 012-3456-7890</p>
+				<p class="open">受付時間: 平日 AM 10:00 〜 PM 5:00</p>
+			</div>
+			-- / 電話番号+受付時間 -->
+		</div>  
+		<!-- / 左側 -->
+		<!-- 右側 ナビゲーション -->
+		<ul class="footnav">
+			<li><a href="subpage.html">eco・環境事業</a></li>
+			<li><a href="subpage.html">ごあいさつ</a></li>
+			<li><a href="subpage.html">サービス概要</a></li>
+			<li><a href="subpage.html">会社情報</a></li>
+			<li><a href="subpage.html">お問い合わせ</a></li>
+		</ul>
+		<!-- / 右側 ナビゲーション -->
+	</div>
+</footer>
+	<!-- / フッター -->
+	<address>Copyright(c) 2019 LCA.elearning All Rights Reserved. Design by <a href="http://f-tpl.com" target="_blank" rel="nofollow">http://f-tpl.com</a></address>
+
+</body>
+</html>
