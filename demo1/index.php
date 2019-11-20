@@ -1,2 +1,2 @@
 <?php
-    echo phpinfo(); ?>
+    include_once("index.html"); ?>
