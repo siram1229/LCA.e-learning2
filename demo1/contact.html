@@ -66,14 +66,16 @@
     <section class="content">
     	<h3 class="heading">お問い合わせ</h3>
       <article>
-			<p>お名前(必須)</p>
-			<input>
-			<p>メールアドレス（必須）</p>
-			<input>
-			<p>お問い合わせ内容（必須）</p>
-			<textarea rows="10" cols="60"></textarea>
-			<p>※必須項目は必ずご入力ください</p>
+			<form action="contact.php" method="post">
+			<p>お名前</p>
+			<input type="text" name="name" size="50" value="">
+			<p>メールアドレス</p>
+			<input type="text" name="from" size="50" value="">
+			<p>お問い合わせ内容</p>
+			<textarea name="inquiry" rows="10" cols="60"></textarea>
 			<input class="contact-submit" type="submit" value="送信">
+		  </form>
+
 		</article>
 	</section>
 	</section>
