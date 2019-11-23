@@ -41,7 +41,7 @@
     		<li><a href="index.html"><strong>トップページ</strong><span>Top</span></a></li>
 				<li><a href="sdgs.html"><strong>SDGsとは？</strong><span>What's SDGs?</span></a></li>
 				<li><a href="lesson.html"><strong>レッスン一覧</strong><span>Lesson</span></a></li>
-				<li><a href="subpage.html"><strong>小テスト</strong><span>Quiz</span></a></li>
+				<li><a href="quiz.html"><strong>小テスト</strong><span>Quiz</span></a></li>
 				<li class="active"><a href="simulation.html"><strong>シミュレーション</strong><span>Simulation</span></a></li>
 				<li class="last"><a href="contact.html"><strong>アンケート/お問い合わせ</strong><span>Questionnaire/Contact</span></a></li>
 			</ul>   
@@ -59,8 +59,8 @@
 		<div id="mainBanner">
 			<img src="images/mainImg2.jpg" width="680" height="140" alt="">
     	<div class="slogan">
-				<h2>自然との調和を目指す企業です</h2>
-				<p>ホームページサンプル株式会社では最新技術と自然との調和を目指します。<br>革新的な技術で世の中を動かす企業を目指します。</p>
+				<h2>CO2排出量シミュレーション</h2>
+				<p>実際の例を元に日常生活で排出されるCO2の量を計算してみよう。</p>
 			</div>
 		</div>
 		<!-- / メイン画像 -->
@@ -78,7 +78,7 @@
 				  <br>
 					<dt><飲料水の生産・流通><br>Q1.普段どの方法で水を飲むことが多いですか？</dt>
 					<dd>
-					  <label><input type="radio" name="q10" value="0.000288">水道水</label><br>
+					  <label><input type="radio" name="q10" value="0.000288" checked>水道水</label><br>
 					  <label><input type="radio" name="q10" value="0.261">国産500mlペットボトル</label><br>
 					  <label><input type="radio" name="q10" value="0.484">輸入500mlペットボトル</label><br>
 					  <label><input type="radio" name="q10" value="0.176">国産2000mlペットボトル</label><br>
@@ -87,7 +87,7 @@
 				  <br>
 					<dt><水質改善処理><br>(Q1で「水道水」を選択した方へ)<br>Q2.水質を改善するためにしていることはありますか？</dt>
 					<dd>
-					  <label><input type="radio" name="q11" value="0">無処理</label><br>
+					  <label><input type="radio" name="q11" value="0" checked>無処理</label><br>
 					  <label><input type="radio" name="q11" value="0.128">煮沸処理</label><br>
 					  <label><input type="radio" name="q11" value="0.000683">浄水器使用</label><br>
 					  <label><input type="radio" name="q11" value="0.0154">冷水機使用(Q5へ)</label><br>
@@ -95,26 +95,26 @@
 				  <br>
 					<dt><飲料水の販売><br>(Q1で「水道水」以外を選択した方へ)<br>Q3.どのような飲料水を購入しましたか？</dt>
 					  <dd>
-						<label><input type="radio" name="q12" value="0.0435">常温販売</label><br>
+						<label><input type="radio" name="q12" value="0.0435" checked>常温販売</label><br>
 						<label><input type="radio" name="q12" value="0.164">冷蔵販売</label><br>
 						<label><input type="radio" name="q12" value="0.254">自動販売機による販売</label><br>
 					  </dd>
 				  <br>
 					<dt><飲料水の保存><br>Q4.飲料水を冷蔵保存していますか？</dt>
 					  <dd>
-						<label><input type="radio" name="q13" value="0">冷蔵保存しない</label><br>
+						<label><input type="radio" name="q13" value="0" checked>冷蔵保存しない</label><br>
 						<label><input type="radio" name="q13" value="0.0350">冷蔵保存する</label><br>
 					  </dd>
 			  　　   <dt><飲用容器の使用><br>Q5.どのような容器で水を飲むことが多いですか？</dt>
 					 <dd>
-					   <label><input type="radio" name="q14" value="0.000515">使用しない(Q2で「冷水器使用」を選択した方向け)</label><br>
+					   <label><input type="radio" name="q14" value="0.000515" checked>使用しない(Q2で「冷水器使用」を選択した方向け)</label><br>
 					   <label><input type="radio" name="q14" value="4.08">ガラスコップ使用</label><br>
 					   <label><input type="radio" name="q14" value="12.2">水筒使用</label><br>
 					   <label><input type="radio" name="q14" value="0">ペットボトル使用</label><br>
 					  </dd>
 				  　 <dt><ペットボトルの処理><br>Q1.ペットボトルをどのように処理しますか？</dt>
 					<dd>
-					  <label><input type="radio" name="q15" value="0">購入も使用もしていない</label><br>
+					  <label><input type="radio" name="q15" value="0" checked>購入も使用もしていない</label><br>
 					  <label><input type="radio" name="q15" value="1.80">繰り返し使用</label><br>
 					  <label><input type="radio" name="q15" value="a">可燃ごみとして捨てる</label><br>
 					  <label><input type="radio" name="q15" value="b">分別して捨てる</label><br>
@@ -163,7 +163,7 @@
 		<!-- / 左側 -->
 		<!-- 右側 ナビゲーション -->
 		<ul class="footnav">
-			<li><a href="subpage.html">本サイトについて</a></li>
+			<li><a href="sdgs.html#sdgs&lca">本サイトについて</a></li>
 			<li><a href="contact.html">お問い合わせ</a></li>
 			<li><a href="contact.html">アンケート</a></li>
 		</ul>

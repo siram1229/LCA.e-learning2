@@ -196,6 +196,10 @@ border-top:3px solid #94a53e;
 border-bottom:3px solid #94a53e;
 }
 
+h4.heading{
+font-size: 150%;
+}
+
 section.content img{
 max-width:90%;
 height:auto;
