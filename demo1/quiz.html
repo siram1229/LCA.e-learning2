@@ -25,7 +25,7 @@
 
 	$('#btn-square').click(r, function(){
 		if(r[0]==4 && r[1]==1 && r[2]==5 && r[3]==2 && r[4]==6 && r[5]==3){
-			$("#log").html('<p>正解！</p><p>LCAではこれら全過程において排出される環境負荷を計算します。</p>');
+			$("#log").html('<br><p>正解！</p><p>LCAではこれら全過程において排出される環境負荷を計算します。</p>');
 		} else {
 			$('#log').text('違います');
 		}
@@ -89,7 +89,7 @@
       <article>
 		  <p>Q1.プラスチックの一生(ライフサイクル)について</p>
 		  <p>正しい順番にドラッグして並び変えてみましょう。</p><br>
-		  <p>並べ替え終えたら、「採点」ボタンをクリックしてください。</p>
+		  <p>並べ替え終えたら、「採点」ボタンをクリックしてください。</p><br>
 			<ul id="datas">
 				<li id="1">原油精製(石油、ガソリン、灯油、軽油　等)</li>
 				<li id="2">プラスチック製品製造</li>
@@ -99,7 +99,7 @@
 				<li id="6">プラスチック製品の使用・廃棄</li>
 			</ul><br><br>
 			<!--<p id="check">結果は...</p><br>-->
-			<a href="javascript:void(0)" onClick="hogeFunction();return false;" id="btn-square">採点</a><br>
+			<a href="javascript:void(0)" onClick="hogeFunction();return false;" id="btn-square">採点</a>
 			<p id="log"></p>
 			<br><hr><br>
 			<p>Q2.環境検定に挑戦</p>
