@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
-<title>ホームページサンプル株式会社のサイトです</title>
+<title>LCA.e-learning</title>
 <meta name="keywords" content="ライフサイクルアセスメント,環境学習,e-learning">
 <meta name="description" content="">
 <link rel="stylesheet" href="style.css" type="text/css" media="screen">
@@ -13,6 +13,25 @@
 <![endif]-->
 <script src="js/jquery1.7.2.min.js"></script>
 <script src="js/script.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+<script>
+	var r = new Array(6);
+  $(function() {
+	$('#datas').sortable({
+		update: function(){
+			r = $(this).sortable('toArray');
+		}
+	});
+
+	$('#check').click(r, function(){
+		if(r[0]==4 && r[1]==1 && r[2]==5 && r[3]==2 && r[4]==6 && r[5]==3){
+			$("#log").html('<p>正解！</p><p>LCAではこれら全過程において排出される環境負荷を計算します。</p>');
+		} else {
+			$('#log').text('違います');
+		}
+	});
+  });
+</script>
 </head>
 
 <body id="subpage">
@@ -60,7 +79,7 @@
 			<img src="images/mainImg2.jpg" width="680" height="140" alt="">
     	<div class="slogan">
 				<h2>小テスト</h2>
-				<p>小テスト</p>
+				<p>これまでに学んだ内容を復習しましょう</p>
 			</div>
 		</div>
 		<!-- / メイン画像 -->
@@ -68,8 +87,20 @@
     <section class="content">
     	<h3 class="heading">小テスト</h3>
       <article>
-			<img src="images/sample1.jpg" width="210" height="120" alt="" class="alignright border" />
-			<p>現在鋭意作成中です。</p>
+		  <p>Q1.プラスチックの一生(ライフサイクル)について</p>
+		  <p>正しい順番にドラッグして並び変えてみましょう</p><br>
+			<ul id="datas">
+				<li id="1">原油精製(石油、ガソリン、灯油、軽油　等)</li>
+				<li id="2">プラスチック製品製造</li>
+				<li id="3">最終処分(焼却、埋め立て)</li>
+				<li id="4">原油採掘</li>
+				<li id="5">プラスチック原料(ペレット)製造</li>
+				<li id="6">プラスチック製品の使用・廃棄</li>
+			</ul><br><br>
+			<p id="check">結果は...</p><br>
+			<p id="log"></p>
+			<br><hr><br>
+			<p>Q2.環境検定に挑戦</p>
     	</article>
     </section>
 

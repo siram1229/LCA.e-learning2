@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="test.css">
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script>
+        var ok = [3,2,1];
+        var flag = 1;
+      $(function() {
+        $('#datas').sortable({
+            update: function(){
+                var result = $(this).sortable('toArray');
+                //for (var i=0; i<ok.length; ++i) {
+                  //  if(ok[i] !== log[i]) {flag = 0;}
+                //}
+                if(result[0]==3 && result[1]==2 && result[2]==1){
+                    $("#log").text('good');
+                } else {
+                  $("#log").text('');
+                }
+            }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <ul id="datas">
+      <li id="1">焼く</li>
+      <li id="2">食べる</li>
+      <li id="3">片づける</li>
+    </ul>
+    <p id="log"></p>
+  </body>
+</html>
