@@ -23,7 +23,7 @@
 		}
 	});
 
-	$('#check').click(r, function(){
+	$('#btn-square').click(r, function(){
 		if(r[0]==4 && r[1]==1 && r[2]==5 && r[3]==2 && r[4]==6 && r[5]==3){
 			$("#log").html('<p>正解！</p><p>LCAではこれら全過程において排出される環境負荷を計算します。</p>');
 		} else {
@@ -97,7 +97,8 @@
 				<li id="5">プラスチック原料(ペレット)製造</li>
 				<li id="6">プラスチック製品の使用・廃棄</li>
 			</ul><br><br>
-			<p id="check">結果は...</p><br>
+			<!--<p id="check">結果は...</p><br>-->
+			<a href="#" class="btn-square">BUTTON</a>
 			<p id="log"></p>
 			<br><hr><br>
 			<p>Q2.環境検定に挑戦</p>
