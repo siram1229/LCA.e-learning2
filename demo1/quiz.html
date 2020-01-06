@@ -43,6 +43,7 @@
 	});
   });
 </script>
+<script src="answer.js"></script>
 </head>
 
 <body id="subpage">
@@ -98,8 +99,21 @@
     <section class="content">
     	<h3 class="heading">小テスト</h3>
       <article>
-		  <p>Q1.プラスチックの一生(ライフサイクル)について</p>
-		  <p>正しい順番にドラッグして並び変えてみましょう。</p><br>
+
+
+		<div class="wrapper2">
+			<script src="quizjs.js"></script>
+			<h4 class="heading">◆1. まるばつクイズ</h4><br>
+			<div id="question"></div>
+			<div id="buttons">
+			  <input type="button" class="button" value="○" onclick="hantei(1)">
+			  <input type="button" class="button" value="×" onclick="hantei(2)">
+			</div>
+		  </div>
+		  <br><br>
+		  <br><br><hr><br><br>
+		  <h4 class="heading">◆2. 並べ替え問題</h4><br>
+		  <p>プラスチックの一生(ライフサイクル)について、正しい順番にドラッグして並び変えてみましょう。</p><br>
 		  <p>並べ替えたら、「採点」ボタンをクリックしてください。</p><br>
 			<ul id="datas">
 				<li id="1">原油精製(石油、ガソリン、灯油、軽油　等)</li>
@@ -113,7 +127,7 @@
 			<a href="javascript:void(0)" onClick="hogeFunction();return false;" id="btn-square">採点</a>
 			<p id="log"></p>
 			<br><hr><br>
-			<p>Q2.環境検定に挑戦</p>
+			<h4 class="heading">◆3. 環境検定に挑戦</h4><br>
 			<a href="http://r-o-y.info/test/eco/index.html" target="_blank" rel="noopener noreferrer">eco検定　過去問倶楽部(新規タブで開きます)</a>
     	</article>
     </section>

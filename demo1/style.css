@@ -281,6 +281,42 @@ margin:3px 0 10px 10px;
 }
 
 
+.wrapper2 {
+	margin: 0 auto;
+	width: 650px;
+	margin-top: 30px;
+  }
+  
+  #question {
+	font-size: 20px;
+	text-align: center;
+  }
+/*  
+.wrapper2  h1 {
+	text-align: center;
+  }
+ */ 
+  #buttons {
+	text-align:center;
+  }
+  
+  .button {
+	margin: 10px;
+	width: 100px;
+	height: 40px;
+	background: #1fa67a;
+	border: 1px solid #DDD;
+	border-radius: 8px;
+	color: #FFF;
+	font-size: 20px;
+	outline: none;
+  }
+  
+  .button:hover {
+	background-color: #a1d7e0;
+	cursor: pointer;
+  }
+
 /*************
 テーブル
 *************/
