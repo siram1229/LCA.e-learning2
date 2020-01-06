@@ -98,35 +98,35 @@ var radios6 = document.getElementsByName(name7);
 					var chart = new Chart(ctx, {
   type: "bar",
   data:{
-    labels:["合計"],
+    labels:["あなたの合計", "考えうる最大値"],
     datasets:[{
 	  label: '飲料水の生産・流通',
-      data:[result[1]],
+      data:[result[1], result[0]*0.484],
       backgroundColor: "red"
     },
     {
 	  label: '水質改善処理',
-      data:[result[2]],
+      data:[result[2], result[0]*0.128],
       backgroundColor: "orange"
     },
 	{
 	  label: '飲料水の販売',
-      data:[result[3]],
+      data:[result[3], result[0]*0.254],
       backgroundColor: "yellow"
     },
     {
 	  label: '飲料水の保存',
-      data:[result[4]],
+      data:[result[4], result[0]*0.0350],
       backgroundColor: "blue"
     },
 	{
 	  label: '飲用容器の使用',
-      data:[result[5]],
+      data:[result[5], 12.2],
       backgroundColor: "black"
     },
     {
 	  label: 'ペットボトルの処分' ,
-      data:[result[6]],
+      data:[result[6], result[0]*0.167],
       backgroundColor: "green"
     }]
   },
