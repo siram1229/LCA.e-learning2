@@ -131,6 +131,7 @@ var radios6 = document.getElementsByName(name7);
     }]
   },
   options:{
+    maintainAspectRatio: false,
     scales:{
       xAxes:[{
         stacked: true
