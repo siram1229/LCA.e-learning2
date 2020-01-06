@@ -98,7 +98,7 @@ var radios6 = document.getElementsByName(name7);
 					var chart = new Chart(ctx, {
   type: "bar",
   data:{
-    labels:["総排出量"],
+    labels:["合計"],
     datasets:[{
 	  label: '飲料水の生産・流通',
       data:[result[1]],
@@ -137,6 +137,10 @@ var radios6 = document.getElementsByName(name7);
         stacked: true
       }],
       yAxes:[{
+          scaleLabel: {
+              display: true,
+              labelString: 'CO2排出量[g-CO2e]'
+          },
 		  stacked: true,
 		  ticks: {
 			  Max: 1000,
